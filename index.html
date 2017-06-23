@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> Portfolio </title>
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/ico">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/portfolio-style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab:600|Pacifico|Open+Sans:400|Lobster|Bowlby+One">
+       <!-- for  font awesome icons-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- for animation effects -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <!-- bootstrap -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+       <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <script src="JS/portfolio-script.js"> </script>
+             
+  </head>
+  
+  <body>
+    <!-- Navbar -->
+     <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+       <div class="container-fluid">
+         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="toggle-btn">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand wow rollIn" href="#"  id="my-name">Reshma</a>
+     </div>
+
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav navbar-right" id="menu">
+           <li> <a href="#About"> About Me </a> </li>
+           <li> <a href="#Portfolio"> Portfolio </a> </li> 
+           <li> <a href="#Contact"> Contact  </a> </li> 
+         </ul>       
+      </div>
+    </div>    
+ </nav>    
+
+  <!-- Jumbotron section-->
+    <div class="container-fluid" id="intro-me">
+        <div class="row">      
+  
+            <div class="col-xs-12 col-md-offset-2 col-md-3 col-sm-6">
+            <img  class="animated zoomIn" src="http://simpleicon.com/wp-content/uploads/responsive-design.png"  id="img-rwd">
+            </div>
+          
+           <div class="col-xs-12 col-md-7 col-sm-6" id="intro">
+             <p class="title">  WEB DEVELOPER  </p> 
+             <p class="small-intro"> A developer who wants to make life easier.</p>
+               <button type="button" class="btn btn-danger" id="hire"> Hire Me </button> 
+             </div>
+
+        </div>   
+     </div> 
+    
+  <!-- About me  section -->
+   <div class="container-fluid" id="About">
+      <div class="row" >
+            <div class="col-md-12 col-xs-12">
+              <h1 class="about color-black" > About Me </h1>
+               <p class="aboutme wow slideInUp">  I have done my post graduation in MSC-IT from Lady Doak College.I am a passionate programmer and front end developer.I love to play with colors and want to make the day to day tasks easier through new technologies.
+               <p class="aboutme wow slideInUp"> I am familiar with html5,css3,bootstrap. To say about my traits ,i am a good team player.I always want to explore new technologies.</p>
+            </div>
+      </div>
+   </div> 
+
+  <!-- Portfolio --> 
+   <div class="container-fluid portfolio" id="Portfolio">
+      <div class="row"> <h1 class="recent-work" > My Recent Works </h1>  
+         <div class="col-md-4 col-xs-12">
+           <div class="thumbnail wow zoomInUp" data-wow-delay="0.1s" >
+              <img src="Images/bootstrap-screenshot (1).png" alt="Bootstrap"> 
+                 <div class="caption">
+                   <p> This template has been created using bootstrap .</p>
+                   <p> <a role="button" href="https://github.com/Reshma2794/Bootstrap-sample-template" class="btn" id="view-code"> View Code                         <span class="fa fa-github" > </span> </a>  
+                      <a role="button" href="https://codepen.io/Reshma94/full/rwjjqy/" class="btn" id="view-code"> Live Demo   <span class="fa fa-codepen" ></a>
+                      </p>
+               </div>
+           </a>
+       </div>
+   </div>
+  <div class="col-md-4 col-xs-12">
+    <div class="thumbnail wow zoomInUp">
+        <img src="Images/pinterest_screen_shot.png" alt="Pinterest-screenshot"> 
+          <div class="caption">
+           <p> It is a pinterest replica made of html5 and css3.</p>
+            <p> <a role="button" href="https://github.com/Reshma2794/Pinterest-Replica" class="btn" id="view-code"> View Code  <span class="fa fa-github" > </a>  
+              <a role="button" href="https://codepen.io/Reshma94/full/YQPBZP/" class="btn" id="view-code"> Live Demo   <span class="fa fa-codepen"> </a>
+          </p>
+       </div>
+    </a>
+  </div>
+</div>
+     
+ <div class="col-md-4 col-xs-12">
+    <div class="thumbnail wow zoomInUp">
+        <img src="Images/card.png" alt="Restaurant-card" id="card"> 
+          <div class="caption">
+          <p> Restaurant cards are made by float property .</p>
+            <p> <a role="button" href="https://github.com/Reshma2794/Restaurant-Cards" class="btn" id="view-code"> View Code  <span class="fa fa-github" > </a>  
+             <a role="button" href="https://codepen.io/Reshma94/full/GEoLpv/" class="btn" id="view-code"> Live Demo  <span class="fa fa-codepen"> </a>
+         </p>
+       </div>
+     </a>
+   </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Contact section -->  
+ <div class="container-fluid" id="Contact">
+    <h2 id="contact-me"> Contact Me  </h2>
+      <div class="social-buttons">
+        <a href="https://github.com/Reshma2794/">  <i class="fa fa-github color-black"></i> </a>
+         <a href="https://www.facebook.com/yogeswari.ks.3">  <i class="fa fa-facebook color-black"> </i> </a>
+         <a href="https://www.linkedin.com/in/reshma-sankarlal-2298199b/?ppe=1">  <i class="fa fa-linkedin color-black"></i> </a>
+        <p class="mail-id"> Mail me to reshuks53@gmail.com </p>
+    </div>
+    </div>
+  </body>
+</html>
+
