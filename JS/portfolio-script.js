@@ -1,7 +1,8 @@
 new WOW().init();
 $(document).ready(function(){
    $('.nav a').on('click', function(){
-          $('.navbar-toggle').click() 
+      $('.btn-navbar').click(); 
+      $('.navbar-toggle').click() 
     });
 });  
       
