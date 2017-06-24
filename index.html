@@ -19,9 +19,12 @@
        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
        <script src="JS/portfolio-script.js"> </script>
        <script>
-         $('.nav a').click(function(){
-           $('.nav-collapse').collapse('hide');
-        });
+         $(document).ready(function(){
+           $('.nav a').on('click', function(){
+              $('.btn-navbar').click(); //bootstrap 2.x
+              $('.navbar-toggle').click() //bootstrap 3.x by Richard
+           });
+         });  
        </script>
              
   </head>
