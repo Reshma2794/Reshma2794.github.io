@@ -5,11 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Droid+Sans|Poppins:800" rel="stylesheet">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-       <!-- Latest compiled JavaScript -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
        <style>
       
  .container
@@ -76,6 +72,42 @@ text-align:center;
                  color:lightgray;
                  
             }
+#search_item{
+ 
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#search_item {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#search_item li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#search_item li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#search_item li a:hover:not(.header) {
+  background-color: #eee;
+}
 
 </style>
  </head>
@@ -85,44 +117,65 @@ text-align:center;
                   <div class="container">
  
                    <p>    <a  href="#" class="title"> snack experts :<span   style="color:teal;opacity:0.4;"> healthy </span>  </a> </p>
-                  <h4 class="search"> Search Zen Habits: </h4>
-                             <input type="text"> </input>
+                  <h4 class="search"> Search Articles </h4>
+                             <input type="text" id="search_item" onkeyup="myFunction()"> 
 
 
 
                                    <div class="all-posts">
-                                       <ul class="posts"> 
-                                                 2017
-                                                 <li> August </li>
-                                                <li> 21  <a href="blog-post1.html"> All You Need To Know About The Life Saving Sugar. </a> </li>
-                                                <li> 16  <a href="blog-post2.html"> How To Snack Smart This Summer. </a> </li>
-                                               <li>  10   <a href="blog-post3.html">   Wanted: The Adonis Looks. </a> </li>
+                                       <ul class="posts" id="post"> 
+                                                                                              
+                                                <li> <a style="margin-left:-30px;"> August </a> </li>
+                                                <li>  21  <a href="blog-post1.html"> All You Need To Know About The Life Saving Sugar. </a> </li>
+                                                <li>  16  <a href="blog-post2.html"> How To Snack Smart This Summer. </a> </li>
+                                               <li>   10   <a href="blog-post3.html">   Wanted: The Adonis Looks. </a> </li>
                                                 
                                          <br>
-                                        </ul>
+                                        
 
-                                               <ul class="posts"> 
-                                                <li> July </li>
-                                                <li> 28  <a href="blog-post4.html"> Demonetisation: Bitter Pill For The Sweet Tooth?. </a>  </li>
-                                                <li> 24 <a href="blog-post5.html">  Pint-sized healthy treasure boxes </a> </li>
-                                               <li> 14  <a href="blog-post6.html">  How the fruit became tennis's beloved refreshment. </a> </li>
-                                                <li>10   <a href="blog-post7.html">   An ode to the original snack experts..</a> </li>
+                                               
+                                                <li>  <a style="margin-left:-30px;">  July </a> </li>
+                                                <li>  28<a href="blog-post4.html"> Demonetisation: Bitter Pill For The Sweet Tooth?. </a>  </li>
+                                                <li>  24 <a href="blog-post5.html">  Pint-sized healthy treasure boxes </a> </li>
+                                               <li>   14<a href="blog-post6.html">  How the fruit became tennis's beloved refreshment. </a> </li>
+                                                <li>  10 <a href="blog-post7.html">  An ode to the original snack experts..</a> </li>
                                          
-                                        </ul>
+                                        
 
                                            <br>
-                                     <ul class="posts"> 
-                                                <li> June </li>
-                                                <li> 21  <a href="blog-post8.html"> 4 Secrets about Mindful Eating. </a>  </li>
-                                                <li> 16 <a href="blog-post9.html">  Is snacking a bad habit? </a> </li>
-                                               <li> 12  <a href="blog-post10.html">  
+                                     
+                                                <li>  <a style="margin-left:-30px;"> June  </a> </li>
+                                                <li>  21<a href="blog-post8.html"> 4 Secrets about Mindful Eating. </a>  </li>
+                                                <li> 16<a href="blog-post9.html">  Is snacking a bad habit? </a> </li>
+                                               <li>  12 <a href="blog-post10.html">  
 Importance of employee wellness programs. </a> </li>
                                                
                                          
                                         </ul>
+
+
                                    </div>
                             </div>
                   </div>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("search_item");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("post");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
 </body>
 
 </html>
